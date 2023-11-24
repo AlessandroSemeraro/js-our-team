@@ -55,14 +55,15 @@ for(let index=0 ; index < teamListMembers.length ; index++){
 
     //creo article//
     const memberCardElement = document.createElement('article');
+    memberCardElement.classList.add('mt-4')
 
     //vado a inserire nell html//
     memberCardElement.innerHTML=` 
-    <h2> ${teamList.nome} </h2>
-    <h2> ${teamList.ruolo} </h2>
+    <h2 class="fs-2 fw-bolder"> ${teamList.nome} </h2>
+    <h2 class="fs-3 fw-light"> ${teamList.ruolo} </h2>
     <div class="image">
     <img src= " ${teamList.picture} " alt=" ${teamList.name} picture">
-    </div>
-    `;
+    </div>`;
+
     containerMemberCards.appendChild(memberCardElement);
 }
